@@ -1,0 +1,8 @@
+.header__logo {
+    max-width: 142px;
+    height: auto;
+    padding: 40px 0 0;
+    margin: 0 auto 0 0;
+    display: block;
+    align-self: flex-start;
+}
