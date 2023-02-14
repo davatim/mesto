@@ -9,6 +9,8 @@
   font-weight: 900;
   color: #000;
   align-self: flex-start;
+  background-color: transparent;
+
 }
 @media screen and (max-width: 900px) {
   .popup__title {
