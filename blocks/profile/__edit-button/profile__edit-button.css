@@ -1,5 +1,25 @@
-.profile__edit-button{
-    background-color: #000;
-    align-self: center;
-    padding-left: 18px;
+.profile__edit-button {
+  background-color: #000;
+  align-self: flex-end;
+  margin-left: 18px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  background-image: url(../../../images/VectorPen.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 900px) {
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    padding: 0;
+  }
 }

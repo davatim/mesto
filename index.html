@@ -1,78 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/page.css">
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <header class="header">
-      <img class="header__logo" src="./images/logo/logo.svg" alt="Логотип" />
-      <img class="header__line" src="./images/Line.svg" alt="Линия" />
+      <img
+        class="header__logo"
+        src="./images/logo/logo.svg"
+        alt="Логотип страницы"
+      />
+      <!-- <img class="header__line" src="./images/Line.svg" alt="Линия" /> -->
     </header>
-    <main>
+    <main class="content">
       <section class="profile">
-        <div class="profile__blocks">
-          <img class="profile__avatar" src="./images/image.jpg" alt="Картинка Жак-Ив Кусто">
-          <div class="profile__info">
-            <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button">
-              <img class="" src="./images/Edit Button.svg" alt="кнопка">
-            </button>
-            <p class="profile__subtitle">Исследователь океана</p>
-          </div>
+        <img
+          class="profile__avatar"
+          src="./images/image.jpg"
+          alt="Изображение автора"
+        />
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button" type="button"></button>
+          <!-- <button class="profile__edit-button" type="button"></button> -->
+          <p class="profile__subtitle">Исследователь океана</p>
         </div>
-        <img class="profile__button" src="./images/Add Button.svg" alt="плюс">
+        <button class="profile__button" type="button"></button>
       </section>
+
       <section class="elements">
         <div class="element">
-          <img class="element__image" src="./images/karachaevsk.png" alt="Карачаевск">
+          <img
+            class="element__image"
+            src="./images/karachaevsk.png"
+            alt="Карачаевск"
+          />
           <div class="element__block">
             <h2 class="element__title">Карачаевск</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <button class="element__icon"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/elbrus.png" alt="Карачаевск">
+          <img
+            class="element__image"
+            src="./images/elbrus.png"
+            alt="Гора Эльбрус"
+          />
           <div class="element__block">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <button class="element__icon"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/dombai.png" alt="Карачаевск">
+          <img class="element__image" src="./images/dombai.png" alt="Домбай" />
           <div class="element__block">
             <h2 class="element__title">Домбай</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <button class="element__icon"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/elbrus.png" alt="Карачаевск">
+          <img
+            class="element__image"
+            src="./images/elbrus.png"
+            alt="Гора Эльбрус"
+          />
           <div class="element__block">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <button class="element__icon"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/dombai.png" alt="Карачаевск">
+          <img class="element__image" src="./images/dombai.png" alt="Домбай" />
           <div class="element__block">
             <h2 class="element__title">Домбай</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <button class="element__icon"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/karachaevsk.png" alt="Карачаевск">
+          <img
+            class="element__image"
+            src="./images/karachaevsk.png"
+            alt="Карачаево-Черкессия"
+          />
           <div class="element__block">
-            <h2 class="element__title">Карачаево-Ч...</h2>
-            <img class="element__icon" src="./images/Vector.svg" alt="Лайк">
+            <h2 class="element__title">Карачаево-Черкессия</h2>
+            <button class="element__icon"></button>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__text">© 2020 Mesto Russia</p>
+      <p class="footer__text">© Timofeev D.R. Mesto Russia 2023</p>
     </footer>
+    <section class="popup">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__profile">
+          <input class="popup__author" type="text" name="name" value="" />
+          <input class="popup__text" type="text" name="text" value="" />
+          <button class="popup__info-save" type="submit">Сохранить</button>
+        </form>
+        <button class="popup__close" type="button"></button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
