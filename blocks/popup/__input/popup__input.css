@@ -12,4 +12,13 @@
   margin-top: 44px;
   color: #000;
 }
-
+.popup__input:first-child {
+  @media screen and (max-width: 900px) {
+    .popup__input:first-child {
+      margin-top: 47px;
+    }
+  }
+}
+.popup__input:last-child {
+  margin-top: 30px;
+}
