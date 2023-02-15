@@ -2,9 +2,7 @@
   width: 32px;
   height: 32px;
   background-image: url(../../../images/CloseIcon.svg);
-  /* background-color: #000; */
   background-color: rgba(0, 0, 0, 0);
-  /* color: #fff; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,7 +10,7 @@
   top: -40px;
   right: -40px;
   cursor: pointer;
-  /* border: none; */
+  border: none;
 }
 .popup__close:hover {
   opacity: 0.6;

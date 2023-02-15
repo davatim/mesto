@@ -1,9 +1,6 @@
 .profile__avatar {
   max-width: 120px;
-  /* display: flex; */
   border-radius: 50%;
-  /* align-self: center;
-  margin-right: 41.25px; */
 }
 @media screen and (max-width: 900px) {
   .profile__avatar {

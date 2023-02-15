@@ -1,9 +1,9 @@
 let popupEditButton = document.querySelector(".profile__edit-button");
 let popupContainer = document.querySelector(".popup");
 let popupButtonClose = document.querySelector(".popup__close");
-let formElement = document.querySelector(".popup__profile");
-let authorInput = document.querySelector(".popup__author");
-let textInput = document.querySelector(".popup__text");
+let formElement = document.querySelector(".popup__name");
+let authorInput = document.querySelector(".popup__input_type_author");
+let textInput = document.querySelector(".popup__input_type_text");
 let profileTitle = document.querySelector(".profile__title");
 let profileText = document.querySelector(".profile__subtitle");
 let likeActive = document.querySelector(".element__icon");
@@ -11,7 +11,7 @@ let likeActive = document.querySelector(".element__icon");
 popupEditButton.addEventListener("click", openPopup);
 
 function openPopup() {
-  popupContainer.classList.add("popup__open");
+  popupContainer.classList.add("popup_opened");
   authorInput.value = profileTitle.textContent;
   textInput.value = profileText.textContent;
 }
@@ -19,7 +19,7 @@ function openPopup() {
 popupButtonClose.addEventListener("click", closePopup);
 
 function closePopup() {
-  popupContainer.classList.remove("popup__open");
+  popupContainer.classList.remove("popup_opened");
 }
 formElement.addEventListener("submit", handleFormSubmit);
 

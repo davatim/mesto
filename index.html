@@ -14,7 +14,6 @@
         src="./images/logo/logo.svg"
         alt="Логотип страницы"
       />
-      <!-- <img class="header__line" src="./images/Line.svg" alt="Линия" /> -->
     </header>
     <main class="content">
       <section class="profile">
@@ -26,7 +25,6 @@
         <div class="profile__info">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
           <button class="profile__edit-button" type="button"></button>
-          <!-- <button class="profile__edit-button" type="button"></button> -->
           <p class="profile__subtitle">Исследователь океана</p>
         </div>
         <button class="profile__button" type="button"></button>
@@ -36,12 +34,12 @@
         <div class="element">
           <img
             class="element__image"
-            src="./images/karachaevsk.png"
+            src="https://placekitten.com/g/800/400"
             alt="Карачаевск"
           />
           <div class="element__block">
             <h2 class="element__title">Карачаевск</h2>
-            <button class="element__icon"></button>
+            <button class="element__icon" type="button"></button>
           </div>
         </div>
         <div class="element">
@@ -52,7 +50,7 @@
           />
           <div class="element__block">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <button class="element__icon"></button>
+            <button class="element__icon" type="button"></button>
           </div>
         </div>
         <div class="element">
@@ -99,14 +97,14 @@
     <section class="popup">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__profile">
-          <input class="popup__author" type="text" name="name" value="" />
-          <input class="popup__text" type="text" name="text" value="" />
+        <form class="popup__name">
+          <input class="popup__input popup__input_type_author" type="text" name="name" value="" />
+          <input class="popup__input popup__input_type_text" type="text" name="text" value="" />
           <button class="popup__info-save" type="submit">Сохранить</button>
         </form>
         <button class="popup__close" type="button"></button>
       </div>
     </section>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

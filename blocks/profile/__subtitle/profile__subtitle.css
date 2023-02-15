@@ -1,7 +1,7 @@
 .profile__subtitle {
   width: 336px;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 10px;
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -15,7 +15,6 @@
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    margin: 0;
     padding-top: 6px;
     width: 282px;
   }
