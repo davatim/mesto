@@ -5,13 +5,10 @@
   margin-top: 48px;
   background-color: rgba(0, 0, 0);
   border-radius: 2px;
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -19,9 +16,9 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 900px) {
   .popup__save {
-    margin-top: 45px;
+    margin-top: 49px;
     width: 238px;
     height: 46px;
     font-size: 14px;

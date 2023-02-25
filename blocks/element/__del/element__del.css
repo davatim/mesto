@@ -1,18 +1,17 @@
 .element__del {
   position: absolute;
+  display: block;
   top: 20px;
   right: 20px;
-  display: block;
-  border: 0;
+  border: none;
   width: 20px;
   height: 20px;
+  cursor: pointer;
   background-image: url(../../../images/Trash.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: inherit;
-  cursor: pointer;
 }
-
 
 .element__del:hover {
   opacity: 0.6;
