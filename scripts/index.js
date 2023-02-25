@@ -7,7 +7,7 @@ const popupProfile = document.querySelector(".popup_edit-profile");
 const buttonCloseEditProfilePopup = document.querySelector(
   ".popup__close_edit-profile"
 );
-const profileForm = document.querySelector(".popup__form_edit-profile");
+const profileForm = document.querySelector(".popup_form_edit-profile");
 const nameInput = document.querySelector(".popup__input_type_author");
 const jobInput = document.querySelector(".popup__input_type_text");
 const popupBtnOpenCard = document.querySelector(".profile__button");
