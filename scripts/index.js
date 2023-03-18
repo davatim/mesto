@@ -17,7 +17,7 @@ const popupImg = document.querySelector(".popup_edit-image");
 const popupImgAdd = document.querySelector(".popup__images");
 const popupImgTitle = document.querySelector(".popup__images-title");
 const popupImgClose = document.querySelector(".popup__close_edit-image");
-const saveProfiledBtn = document.querySelector(".popup__save_edit-profile");
+const saveProfiledBtn = document.querySelector(".popup__save-edit-profile");
 const saveCardBtn = document.querySelector(".popup__save_edit-card");
 const initialCards = [
   {
