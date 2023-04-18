@@ -23,7 +23,6 @@ export default class FormValidator {
       this._hideInputError(formElement, inputElement, _settings);
     }
   };
-
   // Функция, которая добавляет класс с ошибкой
   _showInputError = (_formElement, inputElement, errorMessage) => {
     const errorElement = this._formElement.querySelector(`.${inputElement.id}`);
@@ -31,15 +30,10 @@ export default class FormValidator {
     errorElement.classList.add(this._settings.errorClass);
     errorElement.textContent = errorMessage;
   };
-
-  // Функция, которая удаляет класс с ошибкой
   _hideInputError = (_formElement, inputElement) => {
-    const errorElement = this._formElement.querySelector(`.${inputElement.id}`);
-    inputElement.classList.remove(this._settings.inputErrorClass);
     errorElement.classList.remove(this._settings.errorClass);
     errorElement.textContent = "";
   };
-
   // Функция принимает массив полей
   _hasInvalidInput = () => {
     return this._inputList.some((inputElement) => {
@@ -57,7 +51,6 @@ export default class FormValidator {
       });
     });
   };
-
   // Функция принимает массив полей ввода
   // и элемент кнопки, состояние которой нужно менять
   _toggleButtonState = () => {

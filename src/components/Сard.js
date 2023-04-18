@@ -40,12 +40,10 @@ export default class Card {
         this._element.remove();
       });
   }
-
   //переключатель лайка
   _handleLikeClick() {
     this._likeButton.classList.toggle("element__like_active");
   }
-
   //открытие попапа с картинкой по клику карточки
   _handleOpenPopup() {
     this._handleCardClick(this._link, this._name);

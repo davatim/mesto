@@ -8,12 +8,10 @@ export default class Popup {
     this._popup.classList.add("popup_opened");
     document.addEventListener("keyup", this._handleEscPress);
   }
-
   close() {
     this._popup.classList.remove("popup_opened");
     document.removeEventListener("keyup", this._handleEscPress);
   }
-
   _handleEscPress(event) {
     if (event.key === "Escape") {
       this.close();
