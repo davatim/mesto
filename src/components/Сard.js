@@ -7,6 +7,9 @@ export default class Card {
     this._element = this._getTemplate();
     this._cardImage = this._element.querySelector(".element__image");
     this._likeButton = this._element.querySelector(".element__like");
+////////////
+    this._deleteButton = this._element.querySelector('.element__del');
+    //////////////////
   }
 
   _getTemplate() {
@@ -34,12 +37,16 @@ export default class Card {
       this._handleOpenPopup();
     });
     //слушатель удаления карточки
+    /////////////////////
     this._element
-      .querySelector(".element__del")
-      .addEventListener("click", () => {
+      // .querySelector(".element__del")
+      // .addEventListener("click", () => {
+      //   this._element.remove();
+      this._deleteButton.addEventListener('click', () => {
         this._element.remove();
       });
   }
+  ////////////////////////
   //переключатель лайка
   _handleLikeClick() {
     this._likeButton.classList.toggle("element__like_active");
