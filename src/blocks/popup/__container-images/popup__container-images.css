@@ -1,12 +1,15 @@
 .popup__container-images {
-  max-width: 816px;
-  height: 540px;
+  /* max-width: 816px;
+  height: 540px; */
+  max-width: 75vw;
+  max-height: 75vh;
   position: relative;
 }
-@media screen and (max-width: 1023px) {
-  .popup__container-images {
-    max-width: 240px;
+/* @media screen and (max-width: 1023px) {
+  .popup__container-images { */
+    /* max-width: 240px;
     height: 299px;
-    margin: 136px auto 0;
+    margin: 136px auto 0; */
+    /* margin: auto;
   }
-}
+} */
