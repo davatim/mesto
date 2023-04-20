@@ -1,5 +1,4 @@
 .popup__save_inactive {
-  background-color: rgba(255, 255, 255, 0);
   color: #000;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -8,6 +7,8 @@
   font-size: 18px;
   line-height: 22px;
   border: 1px solid #000;
+  background-color: #E5E5E5;
+  opacity: 0.2;
 }
 .popup__save_inactive:hover {
   background-color: rgba(0, 0, 0, 0);
