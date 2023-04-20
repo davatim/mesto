@@ -25,7 +25,15 @@ export default class Card {
     this._element.querySelector(".element__title").textContent = this._name;
     return this._element;
   }
-
+  _likeCards() {
+    this._handleLikeClick();
+  }
+  _handOpen() {
+    this._handleOpenPopup();
+  }
+  _deleteButton() {
+    this._element.remove();
+  }
   _setEventListeners() {
     // слушатель лайка
     this._likeButton.addEventListener("click", () => {
@@ -34,7 +42,6 @@ export default class Card {
     this._cardImage.addEventListener("click", () => {
       this._handleOpenPopup();
     });
-
     //слушатель удаления карточки
     this._element
       this._deleteButton.addEventListener('click', () => {

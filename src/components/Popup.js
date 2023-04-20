@@ -19,14 +19,14 @@ export default class Popup {
   }
 
   setEventListeners() {
-    this._popup.addEventListener("click", (event) => {
+    this._popup.addEventListener("mousedown", (event) => {
       if (event.target === this._popup) {
         this.close();
       }
     });
     this._popup
       .querySelector(".popup__close")
-      .addEventListener("mouseup", () => {
+      .addEventListener("click", () => {
         this.close();
       });
   }
