@@ -8,3 +8,4 @@
 
 **Ссылка на GitPages**
 https://davatim.github.io/mesto/
+Команда для отправки изменений на сервер npm run deploy
