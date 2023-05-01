@@ -1,6 +1,8 @@
 const buttonOpenEditProfilePopup = document.querySelector(".profile__adit-button");
 const profileInput = document.querySelector(".profile__title");
 const profileJob = document.querySelector(".profile__subtitle");
+const profileImg = document.querySelector(".profile__update");
+const profileAvatar = document.querySelector(".profile__avatar");
 const popupContainers = document.querySelectorAll(".popup");
 const popupProfile = document.querySelector(".popup_edit-profile");
 const buttonCloseEditProfilePopup = document.querySelector(".popup__close_edit-profile");
@@ -79,4 +81,6 @@ export {
   initialCards,
   settings,
   cardsContainer,
+  profileImg,
+  profileAvatar
 };
