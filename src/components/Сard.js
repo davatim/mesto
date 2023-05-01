@@ -10,24 +10,17 @@ export default class Card {
   ) {
     this._name = data.name;
     this._link = data.link;
-
     this._id = data.id;
     this._likes = data.likes;
-
     this._ownerId = data.ownerId;
-
     this._userId = userId;
-
     this._handleCardClick = handleCardClick;
     this._templateSelector = templateSelector;
-
     this._element = this._getTemplate();
     this._cardImage = this._element.querySelector(".element__image");
     this._likeButton = this._element.querySelector(".element__like");
-
     this._likeCard = likeCard;
     this._dislikeCard = dislikeCard;
-
     this._handleCardcConfirm = handleCardcConfirm;
   }
 
@@ -53,7 +46,6 @@ export default class Card {
 
   _setEventListeners() {
     //проверяем лайк и отправлляем запрос на удаление или добавление лайка
-
     this._likeButton.addEventListener("click", () => {
       if (this._likeButton.classList.contains("element__like_active")) {
         this._dislikeCard();
@@ -77,7 +69,6 @@ export default class Card {
   }
 
   //удаление карточки
-
   removeCard() {
     this._element.remove();
   }
@@ -90,26 +81,22 @@ export default class Card {
   }
 
   //переключатель лайка
-
   handleLikeClick() {
     this._likeButton.classList.toggle("element__like_active");
   }
 
   //проверка лайка
-
   _liked() {
     if (this._likes.some((user) => user._id === this._userId))
       this.handleLikeClick();
   }
 
   // кол-во лайков
-
   getLikesTotal(data) {
     this._likeTotal.textContent = `${data.likes.length}`;
   }
 
   //открытие попапа с картинкой по клику карточки
-
   _handleOpenPopup() {
     this._handleCardClick(this._link, this._name);
   }

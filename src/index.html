@@ -8,7 +8,11 @@
   <body>
     <div class="page">
       <header class="header">
-        <img class="header__logo" src="<%=require('./images/logo.svg')%>" alt="Логотип проекта" />
+        <img
+          class="header__logo"
+          src="<%=require('./images/logo.svg')%>"
+          alt="Логотип проекта"
+        />
       </header>
       <main class="content">
         <section class="profile">
@@ -38,7 +42,11 @@
         <h3 class="popup__title popup__title_edit-profile">
           Редактировать профиль
         </h3>
-        <form class="popup__form popup__form_edit-profile" name="edit-profile" novalidate>
+        <form
+          class="popup__form popup__form_edit-profile"
+          name="edit-profile"
+          novalidate
+        >
           <input
             id="namе"
             class="popup__item popup__item_edit-profile_name"
@@ -74,7 +82,11 @@
     <div class="popup popup_edit-card">
       <div class="popup__container popup__container_edit-card">
         <h3 class="popup__title popup__title_edit-card">Новое место</h3>
-        <form class="popup__form popup__form_edit-card" name="edit-card" novalidate>
+        <form
+          class="popup__form popup__form_edit-card"
+          name="edit-card"
+          novalidate
+        >
           <input
             id="place"
             class="popup__item popup__item_edit-card_name"
@@ -113,8 +125,8 @@
         <p class="popup__images-title"></p>
         <button
           class="popup__close popup__close_edit-image"
-          type="button">
-        </button>
+          type="button"
+        ></button>
       </div>
     </div>
     <template class="card-template">
@@ -132,28 +144,42 @@
       <div class="popup__container popup__container_confirm">
         <h3 class="popup__title popup__title_confirm">Вы уверены?</h3>
         <form class="popup__form popup__form_confirm" name="confirm" novalidate>
-        <button class="popup__save popup__save_confirm" type="submit">Да</button>
+          <button class="popup__save popup__save_confirm" type="submit">
+            Да
+          </button>
         </form>
-        <button class="popup__close popup__close_confirm" type="button" ></button>
+        <button
+          class="popup__close popup__close_confirm"
+          type="button"
+        ></button>
       </div>
     </div>
     <div class="popup popup_edit-avatar">
       <div class="popup__container popup__container_edit-avatar">
         <h3 class="popup__title popup__title_edit-avatar">Обновить аватарку</h3>
-        <form class="popup__form popup__form_edit-avatar" name="edit-avatar" novalidate>
-        <input
-          id="avatar"
-          class="popup__item popup__item_edit-avatar_name"
-          type="url"
-          name="avatar"
-          value=""
-          placeholder="Ссылка на картинку"
-          required
+        <form
+          class="popup__form popup__form_edit-avatar"
+          name="edit-avatar"
+          novalidate
+        >
+          <input
+            id="avatar"
+            class="popup__item popup__item_edit-avatar_name"
+            type="url"
+            name="avatar"
+            value=""
+            placeholder="Ссылка на картинку"
+            required
           />
-        <span class="avatar popup__error"></span>
-        <button class="popup__save popup__save_edit-avatar" type="submit">Сохранить</button>
+          <span class="avatar popup__error"></span>
+          <button class="popup__save popup__save_edit-avatar" type="submit">
+            Сохранить
+          </button>
         </form>
-        <button class="popup__close popup__close_edit-avatar" type="button"></button>
+        <button
+          class="popup__close popup__close_edit-avatar"
+          type="button"
+        ></button>
       </div>
     </div>
   </body>

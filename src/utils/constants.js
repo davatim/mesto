@@ -1,11 +1,15 @@
-const buttonOpenEditProfilePopup = document.querySelector(".profile__adit-button");
+const buttonOpenEditProfilePopup = document.querySelector(
+  ".profile__adit-button"
+);
 const profileInput = document.querySelector(".profile__title");
 const profileJob = document.querySelector(".profile__subtitle");
 const profileImg = document.querySelector(".profile__update");
 const profileAvatar = document.querySelector(".profile__avatar");
 const popupContainers = document.querySelectorAll(".popup");
 const popupProfile = document.querySelector(".popup_edit-profile");
-const buttonCloseEditProfilePopup = document.querySelector(".popup__close_edit-profile");
+const buttonCloseEditProfilePopup = document.querySelector(
+  ".popup__close_edit-profile"
+);
 const profileForm = document.querySelector(".popup__form_edit-profile");
 const nameInput = document.querySelector(".popup__item_edit-profile_name");
 const jobInput = document.querySelector(".popup__item_edit-profile_job");
@@ -82,5 +86,5 @@ export {
   settings,
   cardsContainer,
   profileImg,
-  profileAvatar
+  profileAvatar,
 };
